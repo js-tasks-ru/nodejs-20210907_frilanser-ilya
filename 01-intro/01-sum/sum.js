@@ -1,5 +1,5 @@
 function sum(a, b) {
-  if(Number.isInteger(a) && Number.isInteger(b)) {
+  if(typeof(a) === 'number' && typeof(b) === 'number') {
     return a + b;
   } else {
     throw new TypeError("arguments is not a number")
